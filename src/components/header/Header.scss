@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftside {
+    display: flex;
+}
+.middle {
+    display: flex;
+
+    &__list-parent {
+        display: flex;
+        list-style: none;
+    }
+}
+.rightside {
+    display: flex;
+    list-style: none;
+}
