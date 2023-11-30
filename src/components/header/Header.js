@@ -7,9 +7,7 @@ function Header() {
         <nav className="navbar">
             <div className="leftside">
                 <div className="leftside__logo">
-                    <Link to="/">
-                        <img src={logo} alt="logo" className="logo" />
-                    </Link>
+                    <Link to="/">{/* <img src={logo} alt="logo" className="logo" /> */}logo</Link>
                 </div>
             </div>
             <div className="middle">
@@ -34,7 +32,7 @@ function Header() {
                     <li className="rightside__list-item">
                         <Link to="/cart">
                             Cart
-                            <img src={cartStatic} alt="shopping cart" className="cart-static" />
+                            {/* <img src={cartStatic} alt="shopping cart" className="cart-static" /> */}
                         </Link>
                     </li>
                     <li>
