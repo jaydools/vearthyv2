@@ -1,0 +1,19 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.hero-backdrop {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+.main-container {
+    border: 1px solid blue;
+    height: 100vh;
+    position: absolute;
+    padding: 10rem 3rem;
+}
+
+.hero-text {
+    border: 2px solid green;
+}
