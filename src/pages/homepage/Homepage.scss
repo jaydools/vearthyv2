@@ -9,11 +9,41 @@
 }
 .main-container {
     border: 1px solid blue;
-    height: 100vh;
     position: absolute;
-    padding: 10rem 3rem;
+    margin-top: 8rem;
 }
 
 .hero-text {
     border: 2px solid green;
+    padding: 1rem;
+}
+
+.hero-cards {
+    border: 1px solid gold;
+    margin-top: 2rem;
+
+    &__one {
+        border: 1px solid pink;
+        height: 300px;
+        width: 400px;
+        margin: 1rem;
+    }
+    &__two {
+        border: 1px solid pink;
+        height: 290px;
+        width: 300px;
+        margin: 1rem;
+    }
+    &__three {
+        border: 1px solid pink;
+        height: 200px;
+        width: 230px;
+        margin: 1rem;
+    }
+    &__four {
+        border: 1px solid pink;
+        height: 290px;
+        width: 300px;
+        margin: 1rem;
+    }
 }
