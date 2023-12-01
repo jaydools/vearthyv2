@@ -13,19 +13,21 @@ function Header() {
     return (
         <span>
             <nav className="navbar2">
-                <div className="leftside2">
-                    <Link to="/" className="leftside2__link">
-                        <img src={logo} alt="Vearthy logo" className="leftside2__logo" />
-                    </Link>
+                <div className="navbar2__top">
+                    <div className="leftside2">
+                        <Link to="/" className="leftside2__link">
+                            <img src={logo} alt="Vearthy logo" className="leftside2__logo" />
+                        </Link>
+                    </div>
+
+                    <div className="hamburger" onClick={toggleMenu}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
 
-                <div className="hamburger" onClick={toggleMenu}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <div className={`middle2 ${isMenuOpen ? "open" : ""}`}>
+                <div className={`navbar2__bottom ${isMenuOpen ? "open" : ""}`}>
                     <ul className="middle2__list-parent">
                         <li className="middle2__list-item">
                             <Link to="/" className="middle2__link">
