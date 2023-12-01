@@ -15,7 +15,6 @@
     animation-name: slideDown;
     animation-duration: 1s;
     animation-fill-mode: forwards; /* Keeps the header in view after the animation */
-    margin: 0 auto;
 }
 @keyframes slideDown {
     from {
