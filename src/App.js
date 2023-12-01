@@ -11,7 +11,7 @@ function App() {
     return (
         <div className="App">
             <BrowserRouter>
-                <Headerhamburg />
+                <Header />
                 <Routes>
                     <Route path="/" element={<Homepage />} />
                     <Route path="/sleep-health" element={<Bedroom />} />
