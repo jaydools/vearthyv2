@@ -1,20 +1,89 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
 .navbar {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    top: -100px;
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; /* Keeps the header in view after the animation */
+}
+@keyframes slideDown {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
 }
 
 .leftside {
     display: flex;
+
+    &__logo {
+        height: 100px;
+        margin: 1rem 8rem 1rem 1rem;
+    }
 }
 .middle {
     display: flex;
 
     &__list-parent {
         display: flex;
-        list-style: none;
+    }
+
+    &__link {
+        margin: 2rem 1rem;
+        padding-bottom: 0.25rem;
+        display: inline-block;
+        text-decoration: none;
+        color: $primary;
+        background: linear-gradient(to right, #344030, #98a194),
+            linear-gradient(to right, #344030, #d4ddd2, #aabba4);
+        background-size: 100% 2px, 0 2px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
+
+        &:hover {
+            background-size: 0 2px, 100% 2px;
+        }
     }
 }
+
 .rightside {
     display: flex;
-    list-style: none;
+    padding: 1rem 2rem;
+
+    &__login {
+        background-color: rgba(36, 46, 54, 0.1);
+        border-radius: $buttonRadius;
+        padding: 1.25rem 2.25rem;
+
+        &:hover {
+            background-color: $secondary;
+        }
+
+        &:focus {
+            background-color: $primary;
+        }
+    }
+
+    &__cart {
+        background-color: rgba(36, 46, 54, 0.1);
+        border-radius: $buttonRadius;
+        padding: 1.25rem 2.25rem;
+        margin-right: 1rem;
+
+        &:hover {
+            background-color: $secondary;
+        }
+
+        &:focus {
+            background-color: $primary;
+        }
+    }
 }
