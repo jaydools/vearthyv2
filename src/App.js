@@ -5,12 +5,13 @@ import Bathroom from "./pages/bathroom/Bathroom";
 import Sustainability from "./pages/sustainability/Sustainability";
 import Warranty from "./pages/warranty/Warranty";
 import Header from "./components/header/Header";
+import Headerhamburg from "./components/headerHamburg/HeaderHamburg";
 
 function App() {
     return (
         <div className="App">
             <BrowserRouter>
-                <Header />
+                <Headerhamburg />
                 <Routes>
                     <Route path="/" element={<Homepage />} />
                     <Route path="/sleep-health" element={<Bedroom />} />
