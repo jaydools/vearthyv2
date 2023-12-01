@@ -19,12 +19,6 @@ function Header() {
                             <img src={logo} alt="Vearthy logo" className="leftside2__logo" />
                         </Link>
                     </div>
-
-                    <div className="hamburger" onClick={toggleMenu}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
                 </div>
 
                 <div className={`navbar2__bottom ${isMenuOpen ? "open" : ""}`}>
