@@ -46,7 +46,7 @@
 }
 
 .bm-burger-bars {
-    background: $primary;
+    background: $white;
 }
 
 .bm-cross-button {
@@ -85,10 +85,10 @@
     transition: background-size 400ms;
 
     &:hover {
-        background-size: 0 2px, 100% 2px;
+        background-size: 0 1.5px, 100% 1.5px;
     }
 }
 
 .bm-item:hover {
-    color: #98a194;
+    color: $hover;
 }
