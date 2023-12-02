@@ -1,0 +1,53 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.main-container {
+    position: absolute;
+    margin-top: 8rem;
+    width: 100%;
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.hero-text {
+    padding: 1rem;
+
+    &__header {
+        @include mobileH1;
+        color: $secondary;
+    }
+
+    &__subtext {
+        @include mobileH2;
+        text-wrap: nowrap;
+        color: $secondary;
+    }
+}
+
+.hero-cards {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    &__one,
+    &__two,
+    &__three {
+        width: 100px;
+        min-width: 60%;
+        height: 50vh;
+        border-radius: $cardRadius;
+        background-color: $white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 0 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    &__one,
+    &__three {
+        margin: 1rem 0;
+    }
+}
