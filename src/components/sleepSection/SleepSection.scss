@@ -1,0 +1,38 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.sleep-container {
+    position: absolute;
+    margin-top: 42rem;
+}
+
+.sleep-section {
+    display: flex;
+    padding: 1rem;
+
+    &__img {
+        width: 50%;
+    }
+}
+
+.sleep-text {
+    &__header {
+        @include mobileH1;
+    }
+    &__body {
+        @include mobileP1;
+    }
+
+    &__cta {
+        border-radius: $buttonRadius;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: $primary;
+        color: $white;
+
+        &:hover {
+            background-color: $black;
+        }
+    }
+}
