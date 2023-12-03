@@ -1,6 +1,7 @@
 import React from "react";
 import "./Dental.scss";
 import brushing from "../../assets/brushing.png";
+import smile from "../../assets/smile.webp";
 
 function Dental() {
     return (
@@ -12,7 +13,7 @@ function Dental() {
                         sleeping is good for you. Blah blah blah... more text, some more filler
                         text, etc, etc
                     </p>
-                    <button className="dental-text__cta">Start Sleeping Better</button>
+                    <button className="dental-text__cta">Start Brushing Better</button>
                 </div>
                 <img className="dental-section__img" src={brushing} alt="girl brushing teeth" />
             </div>
