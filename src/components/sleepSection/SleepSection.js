@@ -1,7 +1,6 @@
 import React from "react";
 import "./SleepSection.scss";
 import sleeper from "../../assets/sleeping.png";
-import cozybed from "../../assets/cozyBed.webp";
 
 function SleepSection() {
     return (

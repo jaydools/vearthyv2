@@ -1,7 +1,6 @@
 import React from "react";
 import "./Dental.scss";
 import brushing from "../../assets/brushing.png";
-import smile from "../../assets/smile.webp";
 
 function Dental() {
     return (

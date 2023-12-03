@@ -1,0 +1,64 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.benefits-container {
+    position: absolute;
+    margin-top: 83rem;
+
+    background-image: url("../../assets/backgroundStripe.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+}
+.benefits-background {
+    width: 100%;
+}
+
+.benefits-text {
+}
+
+.benefits-cards {
+    height: 80%;
+    display: flex;
+}
+
+.benefits-cards-left {
+    height: 100%;
+    width: 50%;
+
+    &__top,
+    &__bottom {
+        border: 1px solid black;
+        height: 44%;
+        margin: 0.75rem;
+        background-color: $white;
+        border-radius: $cardRadius;
+    }
+}
+
+.benefits-cards-right {
+    height: 60%;
+    width: 50%;
+    position: relative;
+    top: 5rem;
+
+    &__left,
+    &__right {
+        display: flex;
+    }
+
+    &__one,
+    &__two,
+    &__three,
+    &__four {
+        border: 1px solid purple;
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 0.5rem;
+        border-radius: $cardRadius;
+    }
+}
