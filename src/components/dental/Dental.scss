@@ -2,13 +2,14 @@
 @use "../../style/mixins" as *;
 @use "../../style/variables" as *;
 
-.sleep-container {
+.dental-container {
     position: absolute;
-    margin-top: 42rem;
+    margin-top: 60rem;
 }
 
-.sleep-section {
+.dental-section {
     display: flex;
+    flex-direction: row-reverse;
     padding: 1rem;
 
     &__img {
@@ -17,8 +18,10 @@
     }
 }
 
-.sleep-text {
+.dental-text {
+    padding-left: 1rem;
     &__header {
+        text-wrap: nowrap;
         @include mobileH1;
     }
     &__body {

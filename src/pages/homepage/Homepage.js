@@ -3,12 +3,14 @@ import "./Homepage.scss";
 import backdrop from "../../assets/hero.png";
 import Hero from "../../components/hero/Hero";
 import SleepSection from "../../components/sleepSection/SleepSection";
+import Dental from "../../components/dental/Dental";
 
 function Homepage() {
     return (
         <main>
             <Hero />
             <SleepSection />
+            <Dental />
             <img className="hero-backdrop" src={backdrop} alt="green gradient background"></img>
         </main>
     );
