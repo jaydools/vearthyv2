@@ -19,7 +19,7 @@
 
     &__subtext {
         @include mobileH2;
-        text-wrap: nowrap;
+
         color: $secondary;
     }
 }

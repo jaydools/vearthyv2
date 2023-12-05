@@ -3,25 +3,33 @@
 @use "../../style/variables" as *;
 
 .sleep-container {
-    position: absolute;
-    margin-top: 45rem;
 }
 
 .sleep-section {
     display: flex;
+    width: 100%;
     padding: 2rem;
 
     &__img {
-        width: 50%;
-        max-height: 300px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        @include tablet {
+            max-width: 350.875px;
+            height: 350.875px;
+        }
     }
 }
 
 .sleep-text {
     &__header {
         @include mobileH1;
+        color: $white;
     }
     &__body {
+        color: $white;
         @include mobileP1;
     }
 
