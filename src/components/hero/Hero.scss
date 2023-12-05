@@ -37,7 +37,7 @@
         min-width: 60%;
         height: 50vh;
         border-radius: $cardRadius;
-        background-color: $white;
+        background-color: transparent;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin: 0 1rem;
         transition: transform 0.3s ease;
@@ -46,5 +46,18 @@
     &__one,
     &__three {
         margin: 1rem 0;
+    }
+
+    &__one {
+        background-image: url("../../assets/toothbrush.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    &__three {
+        background-image: url("../../assets/bedding.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
     }
 }

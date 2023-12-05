@@ -1,5 +1,7 @@
 import React from "react";
 import "./Hero.scss";
+import toothbrush from "../../assets/toothbrush.jpg";
+import bedding from "../../assets/bedding.jpg";
 
 function Hero() {
     return (
@@ -10,7 +12,7 @@ function Hero() {
             </div>
             <div className="hero-cards">
                 <div className="hero-cards__one">
-                    <img className="hero-cards__img-one" /* src={hero} */ alt="night sky" />
+                    <div className="hero-cards__img-one" alt="bamboo sonic electric toothbrush" />
                     <p>Night Time</p>
                 </div>
                 <div className="hero-cards__two">
@@ -18,7 +20,7 @@ function Hero() {
                     <p>Earth Focused</p>
                 </div>
                 <div className="hero-cards__three">
-                    <img className="hero-cards__img-three" /* src={} */ alt="night sky" />
+                    <div className="hero-cards__img-three" alt="bamboo lyocell bedding" />
                     <p>Day Time</p>
                 </div>
             </div>
