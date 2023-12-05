@@ -17,6 +17,24 @@
 .benefits-text {
     padding-left: 2rem;
     padding-bottom: 1rem;
+    background-color: $white;
+
+    &__header {
+        @include mobileH1;
+
+        @include tablet {
+            @include desktopH1;
+        }
+    }
+
+    &__subheader {
+        padding-top: 0.5rem;
+        @include mobileH4;
+
+        @include tablet {
+            @include desktopH4;
+        }
+    }
 }
 
 .benefits-cards {
@@ -30,7 +48,6 @@
     width: 50%;
 
     &__top {
-        height: 100%;
         margin: 0.75rem;
         background-color: $white;
         border-radius: $cardRadius;
