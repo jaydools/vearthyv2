@@ -60,4 +60,11 @@
         background-repeat: no-repeat;
         background-position: left;
     }
+
+    &__two {
+        background-image: url("../../assets/healthyhome.jpeg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }

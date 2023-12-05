@@ -13,15 +13,12 @@ function Hero() {
             <div className="hero-cards">
                 <div className="hero-cards__one">
                     <div className="hero-cards__img-one" alt="bamboo sonic electric toothbrush" />
-                    <p>Night Time</p>
                 </div>
                 <div className="hero-cards__two">
-                    <img className="hero-cards__img-two" /* src={}  */ alt="night sky" />
-                    <p>Earth Focused</p>
+                    <div className="hero-cards__img-two" alt="night sky" />
                 </div>
                 <div className="hero-cards__three">
                     <div className="hero-cards__img-three" alt="bamboo lyocell bedding" />
-                    <p>Day Time</p>
                 </div>
             </div>
         </div>
