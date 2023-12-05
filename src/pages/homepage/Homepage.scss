@@ -2,8 +2,6 @@
 @use "../../style/mixins" as *;
 @use "../../style/variables" as *;
 
-.hero-backdrop {
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
+.main-background {
+    background-image: url("../../assets/hero.png");
 }

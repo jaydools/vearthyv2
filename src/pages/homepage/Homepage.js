@@ -1,19 +1,21 @@
 import React from "react";
 import "./Homepage.scss";
-import backdrop from "../../assets/hero.png";
+import Header from "../../components/header/Header";
 import Hero from "../../components/hero/Hero";
 import SleepSection from "../../components/sleepSection/SleepSection";
 import Dental from "../../components/dental/Dental";
 import Benefits from "../../components/benefits/Benefits";
+import HeaderHamburg from "../../components/headerHamburg/HeaderHamburg";
 
 function Homepage() {
     return (
-        <main>
+        <main className="main-background">
+            <Header />
+            <HeaderHamburg />
             <Hero />
             <SleepSection />
             <Dental />
             <Benefits />
-            <img className="hero-backdrop" src={backdrop} alt="green gradient background"></img>
         </main>
     );
 }

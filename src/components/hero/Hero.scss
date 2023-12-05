@@ -3,12 +3,9 @@
 @use "../../style/variables" as *;
 
 .main-container {
-    position: absolute;
-    margin-top: 8rem;
     width: 100%;
 
     @include tablet {
-        display: none;
     }
 }
 
