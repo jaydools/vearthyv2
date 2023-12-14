@@ -1,0 +1,52 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.dental-container {
+    &__img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.dental-section {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem;
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        @include tablet {
+            max-width: 350.875px;
+            height: 350.875px;
+        }
+    }
+}
+
+.dental-text {
+    padding-left: 1rem;
+    &__header {
+        text-wrap: nowrap;
+        @include mobileH1;
+    }
+    &__body {
+        @include mobileP1;
+    }
+
+    &__cta {
+        border-radius: $buttonRadius;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: $primary;
+        color: $white;
+
+        &:hover {
+            background-color: $black;
+        }
+    }
+}

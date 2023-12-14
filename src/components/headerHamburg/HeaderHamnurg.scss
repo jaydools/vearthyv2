@@ -1,0 +1,90 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.navbar2 {
+    display: flex;
+    height: 120px;
+
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; /* Keeps the header in view after the animation */
+    @media only screen and (min-width: $tablet-breakpoint) {
+        display: none;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.leftside2 {
+    display: flex;
+
+    &__logo {
+        height: 100px;
+        margin: 0.5rem 8rem 0.5rem 0.5rem;
+    }
+}
+
+/* Basic styles for the burger menu */
+.bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 20px;
+    right: 36px;
+    top: 36px;
+}
+
+.bm-burger-bars {
+    background: $white;
+}
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+.bm-cross {
+    background-color: $secondary;
+}
+
+.bm-menu {
+    @include mobileHamburg;
+    background-image: url("../../assets/hero.png");
+    padding: 2.5em 1.5em 0;
+    display: flex;
+    border-left: 5px solid rgba(35, 35, 35, 0.2);
+}
+
+.bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+}
+
+.bm-item {
+    @include mobileHamburg;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: $white;
+    transition: color 0.2s;
+    background: linear-gradient(to left, #344030, #98a194),
+        linear-gradient(to left, #344030, #d4ddd2, #aabba4);
+    background-size: 100% 1.5px, 0 1.5px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+
+    &:hover {
+        background-size: 0 1.5px, 100% 1.5px;
+    }
+}
+
+.bm-item:hover {
+    color: $hover;
+}

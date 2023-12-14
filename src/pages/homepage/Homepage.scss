@@ -1,0 +1,10 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.main-background {
+    background-image: url("../../assets/hero.png");
+    height: 1030px;
+    position: absolute;
+    width: 100%;
+}

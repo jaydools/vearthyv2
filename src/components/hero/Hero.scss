@@ -1,0 +1,70 @@
+@use "../../style/global" as *;
+@use "../../style/mixins" as *;
+@use "../../style/variables" as *;
+
+.main-container {
+    width: 100%;
+
+    @include tablet {
+    }
+}
+
+.hero-text {
+    padding: 1rem;
+
+    &__header {
+        @include mobileH1;
+        color: $secondary;
+    }
+
+    &__subtext {
+        @include mobileH2;
+
+        color: $secondary;
+    }
+}
+
+.hero-cards {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    &__one,
+    &__two,
+    &__three {
+        width: 100px;
+        min-width: 60%;
+        height: 50vh;
+        border-radius: $cardRadius;
+        background-color: transparent;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 0 1rem;
+        transition: transform 0.3s ease;
+    }
+
+    &__one,
+    &__three {
+        margin: 1rem 0;
+    }
+
+    &__one {
+        background-image: url("../../assets/toothbrush.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    &__three {
+        background-image: url("../../assets/bedding.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    &__two {
+        background-image: url("../../assets/healthyhome.jpeg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
